@@ -1,0 +1,21 @@
+@use 'reset';
+@use 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: vars.$black;
+}
+
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

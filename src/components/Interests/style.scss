@@ -1,0 +1,105 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.interests {
+
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    height: fit-content;
+
+    &__title{
+        font-family:'Press Start 2P', cursive;
+        padding-bottom: 0.6em;
+        width: 90%;
+        margin: 1em 2em 1em 1em;
+        border-bottom: 3px dotted vars.$title-color;
+        text-align: left;
+        color:vars.$title-color;
+    }
+
+    &__grid {
+        width:90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin : 0.6em;
+        align-self: center;
+
+    }
+    .grid__items{
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        margin: 0.5em;
+        padding : 0.2em;
+        border: none;
+        border-radius: 5%;
+
+        &:nth-child(1){
+            background: vars.$heavy-blue;
+            border-top: 2px solid vars.$light-blue;
+            border-left: 2px solid vars.$light-blue;
+            border-right: 2px solid vars.$heavy-blue;
+            border-bottom: 2px solid vars.$heavy-blue;
+        }
+        &:nth-child(2){
+            background: vars.$green;
+            border-top: 2px solid color.scale(vars.$green, $lightness: 15%);
+            border-left: 2px solid color.scale(vars.$green, $lightness: 15%);
+            border-right: 2px solid vars.$green;
+            border-bottom: 2px solid vars.$green;
+        }
+        &:nth-child(3){
+            background: vars.$yellow;
+            border-top: 2px solid color.scale(vars.$yellow, $lightness: 15%);
+            border-left: 2px solid color.scale(vars.$yellow, $lightness: 15%);
+            border-right: 2px solid vars.$yellow;
+            border-bottom: 2px solid vars.$yellow;
+        }
+        &:nth-child(4){
+            background: vars.$orange;
+            border-top: 2px solid color.scale(vars.$orange, $lightness: 15%);
+            border-left: 2px solid color.scale(vars.$orange, $lightness: 15%);
+            border-right: 2px solid vars.$orange;
+            border-bottom: 2px solid vars.$orange;
+        }
+        &:nth-child(5){
+            background: vars.$red;
+            border-top: 2px solid color.scale(vars.$red, $lightness: 15%);
+            border-left: 2px solid color.scale(vars.$red, $lightness: 15%);
+            border-right: 2px solid vars.$red;
+            border-bottom: 2px solid vars.$red;
+        }
+        &:nth-child(6){
+            background: vars.$brown;
+            border-top: 2px solid color.scale(vars.$brown, $lightness: 15%);
+            border-left: 2px solid color.scale(vars.$brown, $lightness: 15%);
+            border-right: 2px solid vars.$brown;
+            border-bottom: 2px solid vars.$brown;
+        }
+        &:nth-child(7){
+            background: vars.$purple;
+            border-top: 2px solid color.scale(vars.$purple, $lightness: 15%);
+            border-left: 2px solid color.scale(vars.$purple, $lightness: 15%);
+            border-right: 2px solid vars.$purple;
+            border-bottom: 2px solid vars.$purple;
+        }
+        &:nth-child(8){
+            background: vars.$sand;
+            border-top: 2px solid color.scale(vars.$sand, $lightness: 15%);
+            border-left: 2px solid color.scale(vars.$sand, $lightness: 15%);
+            border-right: 2px solid vars.$sand;
+            border-bottom: 2px solid vars.$sand;
+        }
+        & img {
+            width: 70%;
+            height: 70%;
+            margin-top: 10px;
+        }
+    }
+    
+}

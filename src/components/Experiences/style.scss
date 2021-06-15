@@ -1,0 +1,120 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.experiences {
+
+    width: 100%;
+    height:fit-content;
+    color : vars.$text-color;
+    &__title{
+        font-family:'Press Start 2P', cursive;
+        padding-bottom: 0.6em;
+        margin: 2em 2em 1em 1em;
+        border-bottom: 3px dotted vars.$title-color;
+        text-align: left;
+        color:vars.$title-color;
+    }
+    &__dev{
+        margin: 1em;
+        align-items: center;
+    }
+    &__actual{
+        margin: 1em 1em ;
+        padding: 1em;
+        display:flex;
+        flex-direction: column;
+        background-color: vars.$grey;
+        border-top: 2px solid vars.$red;
+        border-left: 2px solid vars.$red;
+        border-right: 2px solid vars.$brown;
+        border-bottom: 2px solid vars.$brown;
+    }
+    &__stack{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin : 0.6em;
+        align-self: center;
+        &__category{
+            &:nth-child(1){
+                background: vars.$red;
+                background: linear-gradient(160deg, vars.$red, vars.$grey 21%);
+            }
+            &:nth-child(2){
+                background: vars.$heavy-blue;
+                background: linear-gradient(160deg,  vars.$heavy-blue,  vars.$grey 21%);
+            }
+            &:nth-child(3){
+                background: vars.$green;
+                background: linear-gradient(160deg, vars.$green,  vars.$grey 21%);
+            }
+            &__title{
+                margin: 0.6em;
+                font-size: 0.8em;
+            }
+        }
+        &__front {
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__back {
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__tools{
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__other{
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    &__card{
+        width : 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-13px)
+    }
+    &__studies{
+        margin-bottom: 1.5em;
+    }
+}
+
+.stack__logo{
+    margin: 1em;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    &:nth-child(5){
+        background-color: vars.$whitesmoke;
+    }
+    & img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .experiences__stack{
+        flex-direction : row;
+        &__category{
+        width: 30%;
+        }
+    }
+}

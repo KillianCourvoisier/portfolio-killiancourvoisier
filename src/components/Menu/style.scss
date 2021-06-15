@@ -1,0 +1,47 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.menu {
+    width: 100%;
+    height: fit-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__track, &__hobbies, &__projects{
+        font-family:'Press Start 2P', cursive;
+        color: vars.$title-color;
+        padding: 5px;
+        width:100% * 3;
+        border: none;
+        margin: 0 5px 0 2px;
+        border-radius: 5%;
+        text-align: center;
+        font-size: 0.6em;
+        background-color: vars.$grey;
+        border-top: 2px solid vars.$red;
+        border-left: 2px solid vars.$red;
+        border-right: 2px solid vars.$brown;
+        border-bottom: 2px solid vars.$brown;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+
+        margin-top: 1em;
+
+        &__track, &__hobbies, &__projects{
+            width : 30%;
+            height: fit-content;
+            padding: 5px;
+            font-size: 0.8em;
+            &:hover{
+                border-top: 2px solid color.scale(vars.$green, $lightness: 15%);
+                border-left: 2px solid color.scale(vars.$green, $lightness: 15%);
+                border-right: 2px solid color.scale(vars.$green, $lightness: -30%);
+                border-bottom: 2px solid color.scale(vars.$green, $lightness: -30%);
+            }
+        }
+    }
+}
