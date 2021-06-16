@@ -28,7 +28,7 @@ const OtherJobs = () => {
               <h3>{item.localisation}</h3>
             </div>
             <button type="button" className="button" onClick={() => toggle(i)}>
-              {selected === i ? '-' : '+'}
+              {selected === i ? '↥' : '↧'}
             </button>
           </div>
           <div className={selected === i ? 'anecdote show' : 'anecdote'}>
