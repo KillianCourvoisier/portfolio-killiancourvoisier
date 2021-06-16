@@ -1,125 +1,217 @@
 @use 'src/styles/vars';
 @use 'sass:color';
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: vars.$text-color;
-    
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.otherJobs{
-    min-height: 300px;
-    width: 80%;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    padding: 20px 0;
-}
-.timeline{
-    width:100%;
-    height:auto;
-    max-width: 800px;
-    margin: 0 auto;
-    position:relative;
-}
-.timeline ul li{
-    padding :20px;
-    background-color: vars.$grey;
-    color: vars.$text-color;
-    border-radius:10px 0 10px 0;
-    margin-bottom: 20px;
-    width:300px;
-    border-top: 2px solid vars.$orange;
-    border-left: 2px solid vars.$orange;
-    border-right: 2px solid vars.$brown;
-    border-bottom: 2px solid vars.$brown;
-}
-.timeline ul li:last-child{
-    margin-bottom:0;
-}
-.timeline-content h1 {
-    font-size:1em;
-    font-weight: 500;
-    line-height:0.6em;
-    margin-bottom: 5px;
-}
-.timeline-content h3{
-    font-size: 0.8em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.timeline-content p {
-    font-size:0.8em;
-    line-height: 20px;
-    font-weight: 300;
-}
-.timeline-showmore {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid vars.$text-color;
-    &-button{
-        font-size: 1.2em;
-        border-top: 2px solid vars.$orange;
-        border-left: 2px solid vars.$orange;
-        border-right: 2px solid vars.$brown;
-        border-bottom: 2px solid vars.$brown;
-        background-color: vars.$grey;
-    }
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
-@media only screen and (min-width: 768px) {
-    .timeline::before{
-        content: "";
-        position: absolute;
-        height:100%;
-        width:2px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color:vars.$yellow;
-    }
-    .timeline ul li {
-        width: 50%;
-        margin-bottom: 50px;
-        position: relative;
-        margin: 0 0 20px 20px;
-    }
-    .timeline ul li:nth-child(odd){
-        float: left;
-        clear:right;
-        transform: translateX(-50px);
-        border-radius: 10px 0 10px 10px;
-    }
-    .timeline ul li:nth-child(even){
-        float: right;
-        clear:left;
-        transform: translateX(25px);
-        border-radius: 0 10px 10px 10px;
-    }
-    .timeline ul li::after{
-        content:"";
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        background-color: vars.$red;
-        border-radius: 50%;
-        top: 0;
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: vars.$red;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
 
-    }
-    .timeline ul li:nth-child(odd)::after{
-        transform: translate(50%, -50%);
-        right: -32px;
-    }
-    .timeline ul li:nth-child(even)::after{
-        transform: translate(-50%, -50%);
-        left: -27px;
-    }
-    .timeline ul li:hover:after{
-        background-color: vars.$sand;
-    }
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+  display:flex;
+  flex-direction: column;
+}
 
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: vars.$yellow;
+  border: 2px solid vars.$red;
+  border-radius: 16px;
+  z-index: 1;
+}
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: vars.$red;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  // position: absolute;
+  // display: inline-block;
+  // top: calc(50% - 8px);
+  // text-align: center;
+  // font-size: 14px;
+  // font-weight: bold;
+  color: vars.$orange;
+  margin-bottom: 10px;
+  // text-transform: uppercase;
+  // letter-spacing: 1px;
+  // z-index: 1;
+}
+
+.container.left .date {
+  width: fit-content;
+  right : -130px;
+}
+
+.container.right .date {
+  width: fit-content;
+  left : -130px;
+}
+
+.container .content {
+  padding: 30px 30px 30px 30px;
+  background: vars.$grey;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  border-top: 2px solid vars.$orange;
+  border-left: 2px solid vars.$orange;
+  border-right: 2px solid vars.$brown;
+  border-bottom: 2px solid vars.$brown;
+}
+.container .content .header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid vars.$orange;
+  margin-bottom: 10px;
+}
+
+.container.right .content {
+  border-radius: 5px 0 0 5px;
+}
+.container.left .content {
+  border-radius: 5px 0 0 5px;
+}
+
+.container .content h2 {
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: vars.$red;
+}
+.container .content h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: vars.$purple;
+  padding-bottom: 10px;
+}
+
+.container .content .anecdote {
+  height: auto;
+  max-height: 9999px;
+  margin: 0 0 0 5px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: vars.$sand;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.container .content .anecdote.show {
+  height: auto;
+  max-height: 9999px;
+  margin: 0 0 0 5px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: vars.$sand;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+.container .button {
+  border: 1px inset vars.$orange;
+  font-size: 23px;
+  align-content: center;
+  background-color: vars.$grey;
+  color: vars.$sand;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent vars.$red transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 5px 0 0 5px;
+  }
 }
