@@ -9,6 +9,7 @@
     flex-direction: column;
     align-self: center;
     align-items: center;
+    color: vars.$sand;
     
 
 
@@ -82,7 +83,7 @@
         }
 
         &__card{
-            width : 25%;
+            width : 30%;
             height: 485px;
             margin : 1em;
             & img {

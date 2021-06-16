@@ -63,7 +63,7 @@
 .container::before {
   content: '';
   position: absolute;
-  width: 50px;
+  width: 24px;
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
@@ -80,16 +80,6 @@
   margin-bottom: 10px;
 }
 
-.container.left .date {
-  width: fit-content;
-  right : -130px;
-}
-
-.container.right .date {
-  width: fit-content;
-  left : -130px;
-}
-
 .container .content {
   padding: 30px 30px 30px 30px;
   background: vars.$grey;
@@ -100,9 +90,17 @@
   border-right: 2px solid vars.$brown;
   border-bottom: 2px solid vars.$brown;
 }
-.container .content .header{
+.container.left .content .header{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid vars.$orange;
+  margin-bottom: 10px;
+}
+.container.right .content .header{
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   border-bottom: 1px solid vars.$orange;
   margin-bottom: 10px;
@@ -158,7 +156,6 @@
   border: 1px inset vars.$orange;
   font-size: 23px;
   align-content: center;
-  align-items: center;
   background-color: vars.$grey;
   color: vars.$sand;
 }
@@ -190,6 +187,10 @@
   .container.left::before,
   .container.right::before {
     display: none;
+  }
+  .container.right .content .header{
+    flex-direction: row;
+    text-align: left;
   }
 
 }

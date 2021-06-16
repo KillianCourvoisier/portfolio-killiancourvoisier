@@ -6,6 +6,7 @@ import otherJobsData from 'src/data/otherjobs';
 const OtherJobs = () => {
   const [selected, setSelected] = useState(null);
 
+  // eslint-disable-next-line consistent-return
   const toggle = (i) => {
     if (selected === i) {
       return setSelected(null);

@@ -29,7 +29,7 @@ export default [
     localisation: 'Marigot - 971',
     organization: 'Rolling System',
     anecdote: [
-      'Après le Restaurant "Le Piment" dans la prochaine expériences, j\'ai chercher un travail rapidement, je n\'avais pas envie de repartir de St-Martin tout de suite. J\'ai  donc déposé des CV partout où je pouvais et Rolling System m\'a contacté. Après un rapide entretien, ils m\'embauche comme agent de surface industriel (ouais ça fait classe dis comme ça , mais en fait je néttoyais les grosse machine pleine de sciure d\'aluminium et de cambouis). Comme ils étaient satisfait de mon travail, ils m\'ont garder comme responsable du stock. Enfin voyant que j\'avais fait le travail demandé dans un délai plus court, ils m\'ont envoyer dans les ateliers pour confectionner les barrières/fenêtres/garde-fous/stores et autres joyeusetée en métal au sein de l\'équipe de production. ',
+      'Après le Restaurant "Le Piment" dans la prochaine expériences, j\'ai chercher un travail rapidement, je n\'avais pas envie de repartir de St-Martin tout de suite. J\'ai  donc déposé des CV partout où je pouvais et Rolling System m\'a contacté. Après un rapide entretien, ils m\'embauche comme agent de surface industriel. Comme ils étaient satisfait de mon travail, ils m\'ont garder comme responsable du stock. Enfin voyant que j\'avais fait le travail demandé dans un délai plus court, ils m\'ont envoyer dans les ateliers pour confectionner les barrières/fenêtres/garde-fous/stores et autres joyeusetée en métal au sein de l\'équipe de production. ',
       'A ce poste, j\'ai pu apprendre a lire et reproduire des plans de conception , coupé du verre, de l\'aluminium biensûr, mais aussi quelque pièces en bois. Le travail d\'équipe était nécessaire lors de la pose sur les chantiers, et la sécurité (des biens et des personnes) était mise en avant. J\'ai également été amené à travailler seul sur certains projets',
     ],
 
@@ -41,7 +41,7 @@ export default [
     localisation: 'Orient Bay - 971',
     organization: 'Le Piment',
     anecdote: [
-      'A mon arriver sur l\'île de St-Martin, j\'ai chercher un job dans la restauration, car j\'en sortais tout juste, et c\'est ce qui m\'avait permis d\'attérir ici. C\'est donc naturellement que j\'ai voulus continuer dans cette voie et se fût un succès. Le patron à décider de me laisser une chance pour un mois, j\'ai fait mes preuves et il à donc accepter de me garder pour la saison haute (Et oui, l\'hiver chez nous c\'est l\'été là bas !).',
+      'A mon arriver sur l\'île de St-Martin, j\'ai chercher un job dans la restauration, car j\'en sortais tout juste, et c\'est ce qui m\'avait permis d\'attérir ici. C\'est donc naturellement que j\'ai voulus continuer dans cette voie et se fût un succès. Le patron à décider de me laisser une chance pour un mois, j\'ai fait mes preuves et il a donc accepter de me garder pour la saison haute (Et oui, l\'hiver chez nous c\'est l\'été là bas !).',
       'A ce poste j\'ai pu parfaire mon anglais ainsi que mes compétences en cuisine. N\'étant qu\'une brigade composée du Chef , de son second et de moi-même, j\'ai eu l\'occasion d\'en apprendre sur trois des quatre parties de la cuisine: les pizzas, les entrées et les désserts. Le chaud étant gérer (et réservé) par le Chef. La mise en place, chantant au rythme de la radio, le service intense car c\'était un restaurant réputé m\'ont fait apprécier la cohésion dans une petite équipe. Je sortait d\'un grand hôtel/restaurant, et l\'ambiance y était bien différente !',
     ],
 
@@ -65,8 +65,8 @@ export default [
     localisation: 'St-Clair - 07',
     organization: 'Domaine de St-Clair',
     anecdote: [
-      'Distribution de lettres et colis',
-      'Service à la personne',
+      'Le premier travail qui m\'as permis de me lancer dans la vie active. Les première armes dans le monde professionel. J\'y ai rencontré des gens passionnés au sein d\'une grosse brigade (nous étions une quinzaine permanents).',
+      'A ce poste j\'ai appris le travail d\'équipe, la perseverance et l\'endurance au travail. Je suis passé au cours des mois par tout les postes de la cuisine. Pâtisserie la plus grosse partie du temps, mais aussi Viande, Poissons, Entrées, Sauces, Plonge ... J\'allais où on avait besoin de moi. ',
     ],
 
   },
