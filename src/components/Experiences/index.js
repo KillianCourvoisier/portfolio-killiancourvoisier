@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import './style.scss';
 import OtherJobs from 'src/components/OtherJobs';
@@ -17,6 +18,7 @@ import YarnLogo from 'src/images/yarn.svg';
 import GitLogo from 'src/images/Git_icon.svg';
 import ChaiLogo from 'src/images/chai-logo.png';
 import MochaLogo from 'src/images/mocha-seeklogo.com.svg';
+import OpquastLogo from 'src/images/badge_avance.svg';
 
 const Experiences = () => (
   <div className="experiences">
@@ -25,11 +27,30 @@ const Experiences = () => (
     </div>
     <div className="experiences__dev">
       <div className="experiences__actual">
-        <div className="experiences__studies">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam et dolore magna aliqua.
+        <div className="experiences__studies">
+          <p>
+            Fraichement sortie de l'école <a href="http://oclock.io">O'clock (&#9829;)</a>, promo Nautilus -OUH-AH!- (fin Mars 2021), je rejoins le monde du numérique. J'ai pu aborder la reconversion pro. à travers le socle de trois mois, où nous avons appris à maîtriser les languages HTML, CSS et Javascript.
+          </p>
+          <p>
+            S'en est suivis une spécialisation que nous pouvions choisir alors pour moi , c'était direction Spé Data/API ! Une évidence , puisque passioné de nouvelles technologies, notamment par l'Intélligence Artificielle sous toutes ses applications ( scientifiques ou ludiques ! (∩｀-´)⊃━☆ﾟ.*･｡ﾟ. ).
+          </p>
+          <p>
+            Pour finir nous avons été mis un mois en condition d'entreprise afin de réaliser un projet de fin d'étude en petit groupe (je vous en parle plus bas !). Cela nous à permis de travailler en collaboration pour appliqué ce que chacun avait appris durant la spécialisation dans le but de réaliser le projet le plus proche de l'idée que s'en faisait le Product Owner.
+          </p>
+          <p>
+            Toute cette formation s'est déroulé en télé-présentiel.
+            Tous les jours à la maison, mais en classe virtuelle avec un prof bien vivant, les camarades dans le chat et le tableau (l'écran partagé du prof en fait) sur lequel nous suivions les cours.
+            Et le soir , ce n'était pas fini ! Des challenges, plus ou moins gros, pour mettre en application les notions vu dans la journée et, souvent, quelques notions pour le lendemain afin de nous apprendre a chercher et comprendre une information, une doc, un outils ...
+          </p>
+          <p>
+            J'ai pris le temps, après la présentation du projet de fin d'étude, de passer le certificat <a href="http://opquast.com">Opquast</a> et de l'obtenir avec 835/1000 points. J'ai ensuite suivi la spé Front - React que l'école nous a rendu accessible à la fin de la formation
+          </p>
+          <div className="opquast__logo"><img src={OpquastLogo} alt="logo opquast avancé" /></div>
+          <p>
+            Je suis heureux de ma reconversion, je pense avoir trouver la voie dans laquelle je pourrais m'épanouire pleinement, dans la vie professionnelle comme personnelle.
+          </p>
         </div>
-        <div className="stack__title">Stack Actuel :</div>
+        <div className="stack__title">Stack</div>
         <div className="experiences__stack">
           <div className="experiences__stack__category">
             <div className="experiences__stack__category__title">Back</div>

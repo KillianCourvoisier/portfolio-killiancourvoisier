@@ -3,9 +3,9 @@ import './style.scss';
 
 const Menu = () => (
   <div className="menu">
-    <button type="button" className="menu__track"> Parcours pro</button>
-    <button type="button" className="menu__hobbies"> Hobbies</button>
-    <button type="button" className="menu__projects"> Projets</button>
+    <div className="menu__track"> Parcours pro</div>
+    <div className="menu__hobbies"> Hobbies</div>
+    <div className="menu__projects"> Projets</div>
   </div>
 );
 

@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    date: '2018 - 2019',
+    date: 'Hiver 2018 - 2019',
     job: 'Facteur',
     localisation: 'La bégude de Mazenc - 26',
     organization: 'La Poste',
@@ -67,6 +67,17 @@ export default [
     anecdote: [
       'Le premier travail qui m\'as permis de me lancer dans la vie active. Les première armes dans le monde professionel. J\'y ai rencontré des gens passionnés au sein d\'une grosse brigade (nous étions une quinzaine permanents).',
       'A ce poste j\'ai appris le travail d\'équipe, la perseverance et l\'endurance au travail. Je suis passé au cours des mois par tout les postes de la cuisine. Pâtisserie la plus grosse partie du temps, mais aussi Viande, Poissons, Entrées, Sauces, Plonge ... J\'allais où on avait besoin de moi. ',
+    ],
+
+  },
+  {
+    id: 7,
+    date: '< 2015',
+    job: 'Petites expériences',
+    localisation: 'Principalement Drôme - 26',
+    organization: 'Ici & là',
+    anecdote: [
+      'Avant de rentré comme commis au Domaine du Golf de St-Clair, j\'ai également fait plusieurs jobs de saison (vendanges du raisin, paysagisme, service au bar, petit chantier de rénovations intérieur ...) qui m\'ont tout autant apporté d\'experiences professionnel. Bien que beaucoup plus courte que celles précédement mentionnées (quelques semaines tout au plus) elle ont aussi participées à ma façon d\'appréhender le travail aujourd\'hui. Toutes expériences est bonne à prendre , pas vrai ? ԅ(≖‿≖ԅ)',
     ],
 
   },

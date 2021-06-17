@@ -4,9 +4,9 @@
 .header{
     height:fit-content;
     width:100%;
-    display:flex;
-    flex-direction:column;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     &__img {
 
         display: flex;
@@ -43,6 +43,8 @@
 
         &_box{
             width: 90%;
+            display: flex;
+            flex-direction: column;
         }
 
         & h1{
@@ -75,8 +77,13 @@
 
 @media only screen and (min-width: 768px) {
     .header {
+
+        display:flex;
+        flex-direction:column;
+        align-items: center;
         &__infos{
             padding-bottom: 1em;
+            flex-direction: row;
             & h2 {
                 margin-top: 10px;
             }
@@ -84,7 +91,7 @@
         &__img {
             height: 150px;
             width: 150px;
-            margin: 2em 0 2em 0;
+            margin: 2em ;
         }
     }
 }

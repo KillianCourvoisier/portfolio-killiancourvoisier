@@ -22,6 +22,27 @@
         border-left: 2px solid vars.$red;
         border-right: 2px solid vars.$brown;
         border-bottom: 2px solid vars.$brown;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        
+        &:before {
+            content:"";
+            position:absolute;
+            height: 100px;
+            width: 20px;
+            background: vars.$red;
+            box-shadow: 0 0 10px vars.$red;
+            filter: blur(1px);
+            opacity: 0.9;
+            transition: 0.9s;
+            transform: rotate(-20deg) translateX(-140px) translateY(-90px);
+        }
+        &:hover:before{
+            background: vars.$green;
+            box-shadow: 0 0 10px vars.$green;
+            transform: rotate(-20deg) translate(264px, 70px);
+        }
     }
     
 }
@@ -36,7 +57,9 @@
             height: fit-content;
             padding: 5px;
             font-size: 0.8em;
+            
             &:hover{
+                transition: 0.9s;
                 border-top: 2px solid color.scale(vars.$green, $lightness: 15%);
                 border-left: 2px solid color.scale(vars.$green, $lightness: 15%);
                 border-right: 2px solid color.scale(vars.$green, $lightness: -30%);

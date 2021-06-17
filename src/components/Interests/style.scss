@@ -8,6 +8,7 @@
     justify-content:center;
     flex-direction:column;
     height: fit-content;
+    margin-bottom: 3em;
 
     &__title{
         font-family:'Press Start 2P', cursive;
@@ -23,7 +24,7 @@
         width:90%;
         height: fit-content;
         display: flex;
-        flex-direction: row;
+        flex-direction: baseline;
         flex-wrap: wrap;
         justify-content: space-around;
         margin : 0.6em;
@@ -31,13 +32,18 @@
 
     }
     .grid__items{
-        height: 80px;
+        height: fit-content;
         width: 80px;
         text-align: center;
         margin: 0.5em;
         padding : 0.2em;
         border: none;
         border-radius: 5%;
+        transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+        &__content__title{
+            display: none;
+        }
 
         &:nth-child(1){
             background: vars.$heavy-blue;
@@ -96,10 +102,62 @@
             border-bottom: 2px solid vars.$sand;
         }
         & img {
-            width: 70%;
-            height: 70%;
+            width: 50px;
+            height: 50px;
             margin-top: 10px;
+        }
+        &:hover {
+            height: fit-content;
+            width: 300px;
+            .grid__items__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                line-height:1.4em;
+                &__title{
+                    font-weight:bold;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height:1.4em;
+                    display: flex;
+                }
+            }
+            
+        }
+        &__content{
+            margin-top: 10px;
+            display:none;
         }
     }
     
+}
+
+@media (max-width: 767.98px) {
+    .grid__items{
+
+        &:hover {
+            height: fit-content;
+            width: 300px;
+            .grid__items__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                line-height:1.4em;
+                opacity: 1;
+                &__title{
+                    font-weight:bold;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height:1.4em;
+                    display: flex;
+                    opacity: 1;
+                }
+            }
+            
+        }
+        &__content{
+            margin-top: 10px;
+            display:none;
+        }
+    }
 }
