@@ -7,7 +7,7 @@ import projectsData from 'src/data/projects';
 import OboardScreen from 'src/images/oboardgame_screen.png';
 
 const Projects = () => (
-  <div className="projects">
+  <div id="projects" className="projects">
     <div className="projects__title">Projets</div>
     <div className="projects__card_box">
       {

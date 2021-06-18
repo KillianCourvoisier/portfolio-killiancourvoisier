@@ -8,6 +8,7 @@ import Experiences from 'src/components/Experiences';
 import Interests from 'src/components/Interests';
 import Menu from 'src/components/Menu';
 import Projects from 'src/components/Projects';
+import Footer from 'src/components/Footer';
 
 // == Composant
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
     <Experiences />
     <Projects />
     <Interests />
+    <Footer />
   </div>
 );
 

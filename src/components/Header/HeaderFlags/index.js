@@ -8,9 +8,9 @@ import SpFlag from 'src/images/003-spain.svg';
 const HeaderFlags = () => (
   // Icons made by https://www.freepik.com from https://www.flaticon.com/
   <div className="flag">
-    <img src={UkFlag} alt="uk flag" />
-    <img src={FrFlag} alt="uk flag" />
-    <img src={SpFlag} alt="uk flag" />
+    <img src={FrFlag} alt="uk flag" title="Version Française" />
+    <img src={UkFlag} alt="uk flag" title="English version coming soon !" />
+    <img src={SpFlag} alt="uk flag" title="Versión Española a seguir !" />
   </div>
 );
 

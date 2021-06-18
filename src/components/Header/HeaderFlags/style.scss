@@ -4,7 +4,10 @@
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    & img:nth-child(1){
+    & img {
+        cursor: pointer;
+    }
+    & img:nth-child(2){
         filter: grayscale(100%);
     }
     & img:nth-child(3){

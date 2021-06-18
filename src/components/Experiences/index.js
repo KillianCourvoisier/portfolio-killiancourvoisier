@@ -21,7 +21,7 @@ import MochaLogo from 'src/images/mocha-seeklogo.com.svg';
 import OpquastLogo from 'src/images/badge_avance.svg';
 
 const Experiences = () => (
-  <div className="experiences">
+  <div id="exp-pro" className="experiences">
     <div className="experiences__title">
       Developpement Web & Mobile
     </div>
@@ -90,7 +90,7 @@ const Experiences = () => (
       </div>
     </div>
     <div className="experiences__other">
-      <div className="experiences__title">Autres expériences pro.</div>
+      <div id="other-exp" className="experiences__title">Autres expériences pro.</div>
       <div className="experiences__card">
         <OtherJobs />
       </div>

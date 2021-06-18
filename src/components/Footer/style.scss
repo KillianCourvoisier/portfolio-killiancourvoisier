@@ -1,0 +1,79 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: vars.$whitesmoke;
+    background-color: vars.$black;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    position:relative;
+    
+    
+        &:hover {
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                height:100%;
+                width: 100%;
+                left: -2px;
+                top: -2px;
+                background: linear-gradient(45deg, vars.$purple, vars.$heavy-blue, vars.$green,vars.$yellow, vars.$red, vars.$purple, vars.$heavy-blue, vars.$green,vars.$yellow, vars.$red);
+                background-size: 400%;
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                z-index: -1;
+                animation: steam 20s linear infinite;
+            }
+            @keyframes steam {
+                0% {
+                        background-position: 0 0;
+                }
+                50% {
+                    background-position: 400% 0;
+                }
+                100% {
+                    background-position: 0 0;
+                }
+            }
+            &:after {
+                filter: blur(10px);
+            }
+            & img{
+                filter: grayscale(0%);
+            }
+        }
+
+    &__download, &__icon__github, &__icon__linkedin {
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        margin: 1em;
+        padding: 1em;
+        cursor: pointer;
+        background-color: vars.$black;
+        & img {
+            width: 40px;
+            height: 40px;
+            filter: grayscale(100%);
+        }
+        & p {
+            margin-top: 5px;
+                color: vars.$orange;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+}
+
+@media (max-width: 767.98px) {
+    .footer {
+        img {
+            filter: grayscale(0%);
+        }
+    }
+}

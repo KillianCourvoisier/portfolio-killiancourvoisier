@@ -13,7 +13,7 @@ import AiIcon from 'src/images/006-ai.svg';
 
 const Interests = () => (
   // Icons made by https://www.freepik.com from https://www.flaticon.com/
-  <div className="interests">
+  <div id="interests" className="interests">
     <div className="interests__title">Centres d'intérêt</div>
     <div className="interests__grid">
       <div className="grid__items">
