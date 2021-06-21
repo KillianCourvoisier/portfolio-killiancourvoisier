@@ -138,10 +138,15 @@
 }
 
 @media (max-width: 767.98px) {
+    .interests {
+        height:fit-content;
+        &__grid {
+            height:fit-content;
+        }
+    }
     .grid__items{
-
         &:hover {
-            height: fit-content;
+            height: 150%;
             width: 300px;
             .grid__items__content{
                 display: flex;

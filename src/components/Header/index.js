@@ -5,7 +5,7 @@ import HeaderFlags from 'src/components/Header/HeaderFlags';
 
 const Header = () => (
   <div className="header">
-    <HeaderFlags />
+    {/* <HeaderFlags /> */}
     <div className="header__infos">
       <div className="header__img">
         <img src="https://avatars.githubusercontent.com/u/71069962?s=400&v=4" alt="user avatar" />
