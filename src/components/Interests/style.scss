@@ -8,7 +8,7 @@
     justify-content:center;
     flex-direction:column;
     height: fit-content;
-    margin-bottom: 3em;
+    margin-bottom: 0.8em;
 
     &__title{
         font-family:'Press Start 2P', cursive;
@@ -112,7 +112,7 @@
             height: 95%;
             width: 250px;
             scrollbar-width: initial;
-            scrollbar-base-color: transparent;
+            scrollbar-color: vars.$grey transparent;
             overflow-x: hidden;
             .grid__items__content{
                 display: flex;

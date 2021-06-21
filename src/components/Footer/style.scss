@@ -46,6 +46,9 @@
             & img{
                 filter: grayscale(0%);
             }
+            & p {
+                color: vars.$orange;
+            }
         }
 
     &__download, &__icon__github, &__icon__linkedin {
@@ -63,7 +66,7 @@
         }
         & p {
             margin-top: 5px;
-                color: vars.$orange;
+                color: vars.$grey;
                 font-size: 14px;
                 font-weight: bold;
             }
@@ -75,5 +78,6 @@
         img {
             filter: grayscale(0%);
         }
+        
     }
 }

@@ -2,17 +2,17 @@ import React from 'react';
 import './style.scss';
 
 import githubIcon from 'src/images/001-github.svg';
-import pdfIcon from 'src/images/001-pdf.svg';
+// import pdfIcon from 'src/images/001-pdf.svg';
 import linkedinIcon from 'src/images/002-linkedin.svg';
 
 const Footer = () => (
   <div className="footer">
-    <a href="src/images/cv-example.pdf" download>
+    {/* <a href="src/images/cv-example.pdf" download>
       <div className="footer__download">
         <img src={pdfIcon} alt="pdf icon" />
         <p>CV - PDF</p>
       </div>
-    </a>
+    </a> */}
 
     <a href="https://github.com/KillianCourvoisier">
       <div className="footer__icon__github">
