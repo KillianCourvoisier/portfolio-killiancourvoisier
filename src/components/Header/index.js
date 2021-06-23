@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-import HeaderFlags from 'src/components/Header/HeaderFlags';
+// import HeaderFlags from 'src/components/Header/HeaderFlags';
 
 const Header = () => (
   <div className="header">

@@ -19,8 +19,7 @@
         align-items: center;
     }
     &__actual{
-        margin: 1em 1em ;
-        padding: 1em;
+        margin: 1em 1px ;
         display:flex;
         flex-direction: column;
         background-color: vars.$grey;
@@ -39,6 +38,8 @@
         margin : 0.6em;
         align-self: center;
         &__category{
+            margin: 1em;
+
             &:nth-child(1){
                 background: vars.$red;
                 background: linear-gradient(160deg, vars.$red, vars.$grey 21%);

@@ -32,7 +32,7 @@ const Experiences = () => (
             Fraichement sortie de l'école <a href="http://oclock.io">O'clock (&#9829;)</a>, promo Nautilus -OUH-AH!- (fin Mars 2021), je rejoins le monde du numérique. J'ai pu aborder la reconversion pro. à travers le socle de trois mois, où nous avons appris à maîtriser les languages HTML, CSS et Javascript.
           </p>
           <p>
-            S'en est suivis une spécialisation que nous pouvions choisir, alors pour moi , c'était direction Spé Data/API ! Une évidence puisque passioné de nouvelles technologies, notamment par l'Intelligence Artificielle sous toutes ses applications ( scientifiques ou ludiques ! (∩｀-´)⊃━☆ﾟ.*･｡ﾟ. ).
+            S'en est suivi une spécialisation que nous pouvions choisir, alors pour moi , c'était direction Spé Data/API ! Une évidence puisque passioné de nouvelles technologies, notamment par l'Intelligence Artificielle sous toutes ses applications ( scientifiques ou ludiques ! (∩｀-´)⊃━☆ﾟ.*･｡ﾟ. ).
           </p>
           <p>
             Pour finir nous avons été mis un mois en condition d'entreprise afin de réaliser un projet de fin d'étude en petit groupe (je vous en parle plus bas !). Cela nous à permis de travailler en collaboration pour appliquer ce que chacun avait appris durant la spécialisation dans le but de réaliser le projet le plus proche de l'idée que s'en faisait le Product Owner.
@@ -47,7 +47,7 @@ const Experiences = () => (
           </p>
           <div className="opquast__logo"><img src={OpquastLogo} alt="logo opquast avancé" /></div>
           <p>
-            Je suis heureux de ma reconversion, je pense avoir trouvé la voie dans laquelle je pourrais m'épanouir pleinement, dans la vie professionnelle comme personnelle.
+            Je suis heureux de ma reconversion, je pense avoir trouvé la voie dans laquelle je pourrai m'épanouir pleinement, dans la vie professionnelle comme personnelle.
           </p>
         </div>
         <div className="stack__title">Stack</div>

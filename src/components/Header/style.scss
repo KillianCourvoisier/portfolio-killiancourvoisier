@@ -30,13 +30,13 @@
     }
     &__infos{
         text-align: center;
-        margin: 1em 0 1em 0;
+        margin: 1em 0;
         padding: 0.8em 0 0.8em 0;
         border-top: 5px groove vars.$red;
         border-left: 5px groove vars.$red;
         border-right: 5px groove vars.$brown;
         border-bottom: 5px groove vars.$brown;
-        width: 90%;
+        width: 93%;
         display: flex;
         flex-direction: column;
         align-items: center;
