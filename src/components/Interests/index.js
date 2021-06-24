@@ -5,17 +5,26 @@ import './style.scss';
 import InterestsData from 'src/data/interests';
 
 const Interests = () => {
-  const [hovered, setHovered] = useState(false);
-  const toggleHover = () => setHovered(!hovered);
+  const [selected, setSelected] = useState(null);
+
+  // eslint-disable-next-line consistent-return
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+
+    setSelected(i);
+  };
 
   return (
-  // Icons made by https://www.freepik.com from https://www.flaticon.com/
+  // Icons from https://www.iconfinder.com/
     <div id="interests" className="interests">
       <div className="interests__title">Centres d'intérêt</div>
       <div className="interests__grid">
+
         {
         InterestsData.map((item, i) => (
-          <div className="grid__items" key={item.id}>
+          <div className="grid__items" key={item.id} onClick={() => toggle(item.id)}>
             <img src={item.image} alt={item.image_alt} />
             <div className="grid__items__content__title">
               {item.title}

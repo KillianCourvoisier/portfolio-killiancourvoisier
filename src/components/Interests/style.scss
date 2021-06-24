@@ -49,59 +49,35 @@
 
         &:nth-child(1){
             background: vars.$heavy-blue;
-            border-top: 2px solid vars.$light-blue;
-            border-left: 2px solid vars.$light-blue;
-            border-right: 2px solid vars.$heavy-blue;
-            border-bottom: 2px solid vars.$heavy-blue;
+            border: 2px solid vars.$light-blue;
         }
         &:nth-child(2){
             background: vars.$green;
-            border-top: 2px solid color.scale(vars.$green, $lightness: 15%);
-            border-left: 2px solid color.scale(vars.$green, $lightness: 15%);
-            border-right: 2px solid vars.$green;
-            border-bottom: 2px solid vars.$green;
+            border: 2px solid color.scale(vars.$green, $lightness: 30%);
         }
         &:nth-child(3){
             background: vars.$yellow;
-            border-top: 2px solid color.scale(vars.$yellow, $lightness: 15%);
-            border-left: 2px solid color.scale(vars.$yellow, $lightness: 15%);
-            border-right: 2px solid vars.$yellow;
-            border-bottom: 2px solid vars.$yellow;
+            border: 2px solid color.scale(vars.$yellow, $lightness: 30%);
         }
         &:nth-child(4){
             background: vars.$orange;
-            border-top: 2px solid color.scale(vars.$orange, $lightness: 15%);
-            border-left: 2px solid color.scale(vars.$orange, $lightness: 15%);
-            border-right: 2px solid vars.$orange;
-            border-bottom: 2px solid vars.$orange;
+            border: 2px solid color.scale(vars.$orange, $lightness: 30%);
         }
         &:nth-child(5){
             background: vars.$red;
-            border-top: 2px solid color.scale(vars.$red, $lightness: 15%);
-            border-left: 2px solid color.scale(vars.$red, $lightness: 15%);
-            border-right: 2px solid vars.$red;
-            border-bottom: 2px solid vars.$red;
+            border: 2px solid color.scale(vars.$red, $lightness: 15%);
         }
         &:nth-child(6){
             background: vars.$brown;
-            border-top: 2px solid color.scale(vars.$brown, $lightness: 15%);
-            border-left: 2px solid color.scale(vars.$brown, $lightness: 15%);
-            border-right: 2px solid vars.$brown;
-            border-bottom: 2px solid vars.$brown;
+            border: 2px solid color.scale(vars.$brown, $lightness: 15%);
         }
         &:nth-child(7){
             background: vars.$purple;
-            border-top: 2px solid color.scale(vars.$purple, $lightness: 15%);
-            border-left: 2px solid color.scale(vars.$purple, $lightness: 15%);
-            border-right: 2px solid vars.$purple;
-            border-bottom: 2px solid vars.$purple;
+            border: 2px solid color.scale(vars.$purple, $lightness: 15%);
         }
         &:nth-child(8){
             background: vars.$sand;
-            border-top: 2px solid color.scale(vars.$sand, $lightness: 15%);
-            border-left: 2px solid color.scale(vars.$sand, $lightness: 15%);
-            border-right: 2px solid vars.$sand;
-            border-bottom: 2px solid vars.$sand;
+            border: 2px solid color.scale(vars.$sand, $lightness: 30%);
         }
         & img {
             width: 50px;
@@ -145,13 +121,14 @@
         }
     }
     .grid__items{
+        // display:none;
         &:hover {
             height: 150%;
             width: 300px;
             .grid__items__content{
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: space-between;
                 line-height:1.4em;
                 &__title{
                     font-weight:bold;
