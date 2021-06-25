@@ -4,11 +4,11 @@ import './style.scss';
 import githubIcon from 'src/assets/images/001-github.svg';
 import pdfIcon from 'src/assets/images/001-pdf.svg';
 import linkedinIcon from 'src/assets/images/002-linkedin.svg';
-import CvDownload from 'src/assets/CV-KillianCourvoisier-DeveloppeurWeb.pdf';
+// import CvDownload from 'src/assets/CV-KillianCourvoisier-DeveloppeurWeb.pdf';
 
 const Footer = () => (
   <div className="footer">
-    <a href={CvDownload} download>
+    <a href="https://drive.google.com/file/d/1ww5Q0t17y8R1TQXjWtw12nPDXbQ3Irlr/view?usp=sharing" download target="_blank" rel="noreferrer">
       <div className="footer__download">
         <img src={pdfIcon} alt="pdf icon" />
         <p>CV - PDF</p>

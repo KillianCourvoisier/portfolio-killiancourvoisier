@@ -39,6 +39,17 @@ module.exports = merge(common, {
           },
         ],
       },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
     ],
   },
   stats: {
