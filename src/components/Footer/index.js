@@ -15,14 +15,14 @@ const Footer = () => (
       </div>
     </a>
 
-    <a href="https://github.com/KillianCourvoisier">
+    <a href="https://github.com/KillianCourvoisier" target="_blank" rel="noreferrer">
       <div className="footer__icon__github">
         <img src={githubIcon} alt="github icon" />
         <p>Page GitHub</p>
       </div>
     </a>
 
-    <a href="https://www.linkedin.com/in/killian-courvoisier-158904207/">
+    <a href="https://www.linkedin.com/in/killian-courvoisier-158904207/" target="_blank" rel="noreferrer">
       <div className="footer__icon__linkedin">
         <img src={linkedinIcon} alt="linkedin icon" />
         <p>Profile LinkedIn</p>
