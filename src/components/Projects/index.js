@@ -4,7 +4,7 @@ import './style.scss';
 
 import projectsData from 'src/data/projects';
 
-import OboardScreen from 'src/images/oboardgame_screen.png';
+import OboardScreen from '../../assets/images/oboardgame_screen.png';
 
 const Projects = () => (
   <div id="projects" className="projects">

@@ -3,22 +3,22 @@ import React from 'react';
 import './style.scss';
 import OtherJobs from 'src/components/OtherJobs';
 
-import NodesJSLogo from 'src/images/nodejs-seeklogo.com.svg';
-import SqitchLogo from 'src/images/sqitch-mark.svg';
-import PsqlLogo from 'src/images/elephant-psql.png';
-import SequelizeLogo from 'src/images/sequelize-seeklogo.com.svg';
-import ExpressLogo from 'src/images/express-js-seeklogo.com.svg';
-import StrapiLogo from 'src/images/hp-logo-hero_c94026101f.svg';
-import InsomniaLogo from 'src/images/insomnia-seeklogo.com.svg';
-import ReactLogo from 'src/images/React-icon.svg';
-import ReduxLogo from 'src/images/redux-logo-vector.svg';
-import SassLogo from 'src/images/Sass_Logo_Color.svg';
-import NpmLogo from 'src/images/Npm-logo.svg';
-import YarnLogo from 'src/images/yarn.svg';
-import GitLogo from 'src/images/Git_icon.svg';
-import ChaiLogo from 'src/images/chai-logo.png';
-import MochaLogo from 'src/images/mocha-seeklogo.com.svg';
-import OpquastLogo from 'src/images/badge_avance.svg';
+import NodesJSLogo from 'src/assets/images/nodejs-seeklogo.com.svg';
+import SqitchLogo from 'src/assets/images/sqitch-mark.svg';
+import PsqlLogo from 'src/assets/images/elephant-psql.png';
+import SequelizeLogo from 'src/assets/images/sequelize-seeklogo.com.svg';
+import ExpressLogo from 'src/assets/images/express-js-seeklogo.com.svg';
+import StrapiLogo from 'src/assets/images/hp-logo-hero_c94026101f.svg';
+import InsomniaLogo from 'src/assets/images/insomnia-seeklogo.com.svg';
+import ReactLogo from 'src/assets/images/React-icon.svg';
+import ReduxLogo from 'src/assets/images/redux-logo-vector.svg';
+import SassLogo from 'src/assets/images/Sass_Logo_Color.svg';
+import NpmLogo from 'src/assets/images/Npm-logo.svg';
+import YarnLogo from 'src/assets/images/yarn.svg';
+import GitLogo from 'src/assets/images/Git_icon.svg';
+import ChaiLogo from 'src/assets/images/chai-logo.png';
+import MochaLogo from 'src/assets/images/mocha-seeklogo.com.svg';
+import OpquastLogo from 'src/assets/images/badge_avance.svg';
 
 const Experiences = () => (
   <div id="exp-pro" className="experiences">

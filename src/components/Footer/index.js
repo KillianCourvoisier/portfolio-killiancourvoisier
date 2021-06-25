@@ -1,13 +1,14 @@
 import React from 'react';
 import './style.scss';
 
-import githubIcon from 'src/images/001-github.svg';
-import pdfIcon from 'src/images/001-pdf.svg';
-import linkedinIcon from 'src/images/002-linkedin.svg';
+import githubIcon from 'src/assets/images/001-github.svg';
+import pdfIcon from 'src/assets/images/001-pdf.svg';
+import linkedinIcon from 'src/assets/images/002-linkedin.svg';
+import CvDownload from 'src/assets/CV-KillianCourvoisier-DeveloppeurWeb.pdf';
 
 const Footer = () => (
   <div className="footer">
-    <a href="src/miscellaneous/CV - Killian Courvoisier - Developpeur Web.pdf" download>
+    <a href={CvDownload} download>
       <div className="footer__download">
         <img src={pdfIcon} alt="pdf icon" />
         <p>CV - PDF</p>
