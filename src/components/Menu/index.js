@@ -3,10 +3,10 @@ import './style.scss';
 
 const Menu = () => (
   <div className="menu">
-    <div className="menu__track"> <a href="#exp-pro">Parcours pro</a></div>
-    <div className="menu__track"> <a href="#other-exp">Autres exp</a></div>
-    <div className="menu__projects"> <a href="#projects">Projets</a></div>
-    <div className="menu__hobbies"> <a href="#interests">Intérêts</a></div>
+    <a href="#exp-pro"><div className="menu__track"> Parcours pro</div></a>
+    <a href="#other-exp"> <div className="menu__track"> Autres exp</div></a>
+    <a href="#projects"><div className="menu__projects"> Projets</div></a>
+    <a href="#interests"><div className="menu__hobbies"> Intérêts</div></a>
   </div>
 );
 

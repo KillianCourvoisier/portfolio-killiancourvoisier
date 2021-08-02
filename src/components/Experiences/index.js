@@ -29,7 +29,7 @@ const Experiences = () => (
       <div className="experiences__actual">
         <div className="experiences__studies">
           <p>
-            Fraichement sortie de l'école <a href="http://oclock.io">O'clock (&#9829;)</a>, promo Nautilus -OUH-AH!- (fin Mars 2021), je rejoins le monde du numérique. J'ai pu aborder la reconversion pro. à travers le socle de trois mois, où nous avons appris à maîtriser les languages HTML, CSS et Javascript.
+            Fraichement sortie de l'école <a href="http://oclock.io" target="_blank" rel="noreferrer">O'clock (&#9829;)</a>, promo Nautilus -OUH-AH!- (fin Mars 2021), je rejoins le monde du numérique. J'ai pu aborder la reconversion pro. à travers le socle de trois mois, où nous avons appris à maîtriser les languages HTML, CSS et Javascript.
           </p>
           <p>
             S'en est suivi une spécialisation que nous pouvions choisir, alors pour moi , c'était direction Spé Data/API ! Une évidence puisque passioné de nouvelles technologies, notamment par l'Intelligence Artificielle sous toutes ses applications ( scientifiques ou ludiques ! (∩｀-´)⊃━☆ﾟ.*･｡ﾟ. ).
@@ -43,7 +43,7 @@ const Experiences = () => (
             Et le soir , ce n'était pas fini ! Des challenges, plus ou moins gros, pour mettre en application les notions vues dans la journée et, souvent, quelques notions pour le lendemain afin de nous apprendre à chercher et comprendre une information, une doc, un outil ...
           </p>
           <p>
-            J'ai pris le temps après la présentation du projet de fin d'étude, de passer le certificat <a href="http://opquast.com">Opquast</a> et de l'obtenir avec 835/1000 points. J'ai ensuite suivi la spé Front - React que l'école nous a rendu accessible à la fin de la formation.
+            J'ai pris le temps après la présentation du projet de fin d'étude, de passer le certificat <a href="http://opquast.com" target="_blank" rel="noreferrer">Opquast</a> et de l'obtenir avec 835/1000 points. J'ai ensuite suivi la spé Front - React que l'école nous a rendu accessible à la fin de la formation.
           </p>
           <div className="opquast__logo"><img src={OpquastLogo} alt="logo opquast avancé" /></div>
           <p>

@@ -19,7 +19,7 @@ const Projects = () => (
               <img src={OboardScreen} alt="screen site oboardgame" />
             </div>
             <div className="projects__card__content">
-              <div className="projects__card__content__name"><a href="https://github.com/KillianCourvoisier/oboardgame-project-Nautilus">{item.name}</a></div>
+              <div className="projects__card__content__name"><a href="https://github.com/KillianCourvoisier/oboardgame-project-Nautilus" target="_blank" rel="noreferrer">{item.name}</a></div>
               <div className="projects__card__content__excerpt">
                 <p>{item.excerpt}
                 </p>
